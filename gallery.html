@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="script-gallery.js" defer></script>
+
+  <link rel="stylesheet" href="style-gallery.css">
+
+  <title>Gallery</title>
+
+</head>
+<body>
+
+<div id="bg-elements">
+  <img src="img/soyuz.svg" id="anim-img">
+  <div class="one">
+    <div class="two">
+      <div class="three">
+        <div class="planet"><ion-icon name="planet"></ion-icon></div>
+        <div class="rocket"><ion-icon name="rocket"></ion-icon></div>
+        <div class="four">
+          <div class="five">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+<div id="wrapper">
+
+  <header>
+    <time id="date"></time>
+    <h1>Image Gallery</h1>
+    <p>Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.</p>
+  </header>
+
+  <section id="sidebar">
+    <a href="index.html"> <p>Back to daily images</p> </a>
+    <label for="calendar">Choose a week</label>
+    <input
+      type="week"
+      id="calendar"
+      name="start"
+      min="2015-01">
+    <div id="thumbnails">
+      <img src="" class="thumbnails"/>
+      <p>Click on the images to learn stuff</p>
+      <img src="" class="thumbnails"/>
+      <img src="" class="thumbnails"/>
+      <img src="" class="thumbnails"/>
+      <img src="" class="thumbnails"/>
+      <img src="" class="thumbnails"/>
+      <img src="" class="thumbnails"/>
+    </div>
+  </section>
+
+  <section id="picture">
+    <img src="" id="nasa-img"/>
+    <iframe id="iframe" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </section>
+  
+  <section id="navigation">
+    <p class="previous">Previous week<ion-icon name="chevron-back-circle-outline"></ion-icon></p>
+    <p class="next"><ion-icon name="chevron-forward-circle-outline"></ion-icon>Next week</p>
+  </section>
+
+  <section id="information">
+    <details>
+      <summary>
+        <p>What am I looking at?</p>
+      </summary>
+      <h2 id="title">Hello friend!</h2>
+      <h3 id="copyright">Nice to meet you!</h3>
+      <p id="explanation">Please chose a week from the calendar, and click on the gallery's thumbnail to enlarge the picture and get some interesting information from scientists.</p>
+    </details>
+  </section>
+
+
+  <footer>
+    <p>Authors & Editors:
+      <a href="http://www.phy.mtu.edu/faculty/Nemiroff.html">Robert Nemiroff (MTU)</a>
+      &
+      <a href="https://antwrp.gsfc.nasa.gov/htmltest/jbonnell/www/bonnell.html">Jerry Bonnell (UMCP)</a>
+    </p>
+
+    <p>NASA Official:Phillip Newman
+      <a href="https://apod.nasa.gov/apod/lib/about_apod.html#srapply">Specific rights apply.</a>
+    </p>
+
+    <p>
+      <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">NASA Web Privacy Policy and Important Notices</a>
+    </p>
+
+    <p>A service of:
+    <a href="https://astrophysics.gsfc.nasa.gov/">ASD</a>
+    at
+    <a href="https://www.nasa.gov/">NASA</a>
+      /
+      <a href="https://www.nasa.gov/centers/goddard/">GSFC,</a>
+      <a href="https://science.nasa.gov/learners">NASA Science Activation</a>
+      &
+      <a href="http://www.mtu.edu/">Michigan Tech. U.</a>
+    </p>
+  </footer>
+
+</div>
+ 
+  
+</body>
+</html>
