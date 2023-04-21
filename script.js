@@ -1,9 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     document.querySelector('#picture').setAttribute("style", "opacity: 1")
-  
     document.querySelector('#information').setAttribute("style", "opacity: 1")
-    
   }, 3000)
 })
 
@@ -22,13 +20,13 @@ function dateFormatter (dateObject) {
 
 // Display Today's date in header
 let today = new Date();
-
 let currentDate = dateFormatter(today);
 document.querySelector('#date').innerHTML = `Today is:<br>${currentDate}`
 
 // ------------ --EVENT LISTENER A NAPTÁR INPUT MEZEJÉN
 // chosenDate változóba menti el a kiválasztott dátumot.
-// meghívja az API-t adott dátumra vonatkozólag. Eredményül egy tömböt kap, benne az adott 1 nap objectjével.
+// meghívja az API-t adott dátumra vonatkozólag.
+// Eredményül egy tömböt kap, benne az adott 1 nap objectjével.
 
 let calendarInputField = document.querySelector('#calendar');
 calendarInputField.setAttribute("max", `${currentDate}`);
@@ -38,8 +36,8 @@ calendarInputField.addEventListener("input", updateCalendarValue);
 let chosenDate = currentDate;
 let calendarDateObject = calendarInputField.valueAsDate
 let modifier = 0;
-// updating calendar value and re-sending api request
 
+// updating calendar value and re-sending api request
 function updateCalendarValue (e) {         // from the calendar Event
   modifier = 0;
   calendarDateObject = e.target.valueAsDate;
@@ -48,8 +46,7 @@ function updateCalendarValue (e) {         // from the calendar Event
   sendApiRequest();
 }
 
-function updateCalendarValueWithNavigation () {   // from the navigation prev/next buttons
-  
+function updateCalendarValueWithNavigation () {   // from the navigation prev/next buttons  
   let modifiedDateNumber = calendarDateObject.getTime() - (modifier*86400000)
   calendarDateObject = new Date(modifiedDateNumber);
   modifier = 0;
@@ -58,8 +55,7 @@ function updateCalendarValueWithNavigation () {   // from the navigation prev/ne
   sendApiRequest();
 }
 
-sendApiRequest();       //
-
+sendApiRequest();
 
 async function sendApiRequest(){
   let apiKey = "S8VP2NASnZddZ3x1vDZFL6QrAUTiHoIPo3dzddec"
@@ -67,7 +63,6 @@ async function sendApiRequest(){
   let spaceData = await response.json()
   useApiDataChosenDate(spaceData)
 }
-
 
 //chosenDate szerinti image betöltése az oldalba
 //Mivel itt a spaceData egy tömb amibe az 1 napnyi object van ágyazva, így hivatkoznunk kell a tömbön belüli [0] helyére is.
@@ -99,7 +94,6 @@ function useApiDataChosenDate(data){
 }
 
 // NAVIGATION below the picture
-
 let previousDay = document.querySelector('.previous')
 let nextDay = document.querySelector('.next')
 
