@@ -8,9 +8,11 @@ Task was to make an API work on our website and make some dynamic data change in
 - There is a calendar where you can chose the date you are interested in
 - There is a gallery, where you can browse images in a weekly layout
 - There are some next/prev buttons displayed as well to help browsing.
+- A simple loading animation for a fun experience (for the user and the programmer ;) )
+- Basic responsivity
 
 Next on my ToDoList regarding this project:
-- tidy up the unnecessary duplicated codes in JavaScript, and display everything on a single html document.
+- tidy up the unnecessary duplicated codes in JavaScript, and display everything on a single html document instead of 2.
 Meanwhile I value this project as my very first introduction to fetch, therefore I love the idea to keep it as it is, to be able to look back at it and see how much I have learned since.
 
 # Technologies used:
