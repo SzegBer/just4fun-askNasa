@@ -2,7 +2,7 @@
 
 NASA - Astronomy Picture of the Day - API
 
-Task was to make an API work on our website and make some dynamic data change in our DOM using Vanilla JavaScript logics. This school project was my first introduction to HTPP requests, with a few basic level UX elements such as a calendar or an image gallery.
+Task was to make an API work on our website and make some dynamic data change in our DOM using Vanilla JavaScript logics. This school project was my first introduction to HTTP requests. It contains a few basic level UX element such as a calendar and an image gallery.
 
 Next on my ToDoList regarding this project:
 - Recreate the full website using React.
